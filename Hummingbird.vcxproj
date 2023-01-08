@@ -19,7 +19,26 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\common\Camera.cpp" />
+    <ClCompile Include="src\common\d3dApp.cpp" />
+    <ClCompile Include="src\common\d3dUtil.cpp" />
+    <ClCompile Include="src\common\DDSTextureLoader.cpp" />
+    <ClCompile Include="src\common\GameTimer.cpp" />
+    <ClCompile Include="src\common\GeometryGenerator.cpp" />
+    <ClCompile Include="src\common\MathHelper.cpp" />
+    <ClCompile Include="src\core\BoxApp.cpp" />
     <ClCompile Include="src\core\Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\common\Camera.h" />
+    <ClInclude Include="src\common\d3dApp.h" />
+    <ClInclude Include="src\common\d3dUtil.h" />
+    <ClInclude Include="src\common\d3dx12.h" />
+    <ClInclude Include="src\common\DDSTextureLoader.h" />
+    <ClInclude Include="src\common\GameTimer.h" />
+    <ClInclude Include="src\common\GeometryGenerator.h" />
+    <ClInclude Include="src\common\MathHelper.h" />
+    <ClInclude Include="src\common\UploadBuffer.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -105,11 +124,11 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
