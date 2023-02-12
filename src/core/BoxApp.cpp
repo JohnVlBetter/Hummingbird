@@ -7,7 +7,7 @@
 //   Hold the left mouse button down and move the mouse to rotate.
 //   Hold the right mouse button down and move the mouse to zoom in and out.
 //***************************************************************************************
-#include "../common/d3dApp.h"
+/*#include "../common/d3dApp.h"
 #include "../common/MathHelper.h"
 #include "../common/UploadBuffer.h"
 
@@ -449,6 +449,7 @@ void BoxApp::BuildPSO()
 		mpsByteCode->GetBufferSize() 
 	};
     psoDesc.RasterizerState = CD3DX12_RASTERIZER_DESC(D3D12_DEFAULT);
+    //psoDesc.RasterizerState.FillMode = D3D12_FILL_MODE_WIREFRAME;
     psoDesc.BlendState = CD3DX12_BLEND_DESC(D3D12_DEFAULT);
     psoDesc.DepthStencilState = CD3DX12_DEPTH_STENCIL_DESC(D3D12_DEFAULT);
     psoDesc.SampleMask = UINT_MAX;
@@ -459,4 +460,4 @@ void BoxApp::BuildPSO()
     psoDesc.SampleDesc.Quality = m4xMsaaState ? (m4xMsaaQuality - 1) : 0;
     psoDesc.DSVFormat = mDepthStencilFormat;
     ThrowIfFailed(md3dDevice->CreateGraphicsPipelineState(&psoDesc, IID_PPV_ARGS(&mPSO)));
-}
+}*/

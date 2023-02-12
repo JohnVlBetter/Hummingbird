@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\core\Main.cpp">
-      <Filter>src\core</Filter>
-    </ClCompile>
     <ClCompile Include="src\common\Camera.cpp">
       <Filter>src\common</Filter>
     </ClCompile>
@@ -41,6 +38,15 @@
     </ClCompile>
     <ClCompile Include="src\core\BoxApp.cpp">
       <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\LandAndWavesApp.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\FrameResource.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\Waves.cpp">
+      <Filter>src\common</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -69,6 +75,12 @@
       <Filter>src\common</Filter>
     </ClInclude>
     <ClInclude Include="src\common\UploadBuffer.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\FrameResource.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\Waves.h">
       <Filter>src\common</Filter>
     </ClInclude>
   </ItemGroup>

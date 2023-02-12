@@ -23,11 +23,13 @@
     <ClCompile Include="src\common\d3dApp.cpp" />
     <ClCompile Include="src\common\d3dUtil.cpp" />
     <ClCompile Include="src\common\DDSTextureLoader.cpp" />
+    <ClCompile Include="src\common\FrameResource.cpp" />
     <ClCompile Include="src\common\GameTimer.cpp" />
     <ClCompile Include="src\common\GeometryGenerator.cpp" />
     <ClCompile Include="src\common\MathHelper.cpp" />
+    <ClCompile Include="src\common\Waves.cpp" />
     <ClCompile Include="src\core\BoxApp.cpp" />
-    <ClCompile Include="src\core\Main.cpp" />
+    <ClCompile Include="src\core\LandAndWavesApp.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\common\Camera.h" />
@@ -35,10 +37,12 @@
     <ClInclude Include="src\common\d3dUtil.h" />
     <ClInclude Include="src\common\d3dx12.h" />
     <ClInclude Include="src\common\DDSTextureLoader.h" />
+    <ClInclude Include="src\common\FrameResource.h" />
     <ClInclude Include="src\common\GameTimer.h" />
     <ClInclude Include="src\common\GeometryGenerator.h" />
     <ClInclude Include="src\common\MathHelper.h" />
     <ClInclude Include="src\common\UploadBuffer.h" />
+    <ClInclude Include="src\common\Waves.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
