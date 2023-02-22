@@ -29,7 +29,7 @@
     <ClCompile Include="src\common\MathHelper.cpp" />
     <ClCompile Include="src\common\Waves.cpp" />
     <ClCompile Include="src\core\BoxApp.cpp" />
-    <ClCompile Include="src\core\LitColumnsApp.cpp" />
+    <ClCompile Include="src\core\TexWavesApp.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\common\Camera.h" />

@@ -45,7 +45,7 @@
     <ClCompile Include="src\common\Waves.cpp">
       <Filter>src\common</Filter>
     </ClCompile>
-    <ClCompile Include="src\core\LitColumnsApp.cpp">
+    <ClCompile Include="src\core\TexWavesApp.cpp">
       <Filter>src\core</Filter>
     </ClCompile>
   </ItemGroup>

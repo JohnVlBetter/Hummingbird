@@ -1,8 +1,8 @@
 #pragma once
 
-#include "../Common/d3dUtil.h"
-#include "../Common/MathHelper.h"
-#include "../Common/UploadBuffer.h"
+#include "d3dUtil.h"
+#include "MathHelper.h"
+#include "UploadBuffer.h"
 
 struct ObjectConstants
 {
@@ -40,6 +40,7 @@ struct Vertex
 {
     DirectX::XMFLOAT3 Pos;
     DirectX::XMFLOAT3 Normal;
+	DirectX::XMFLOAT2 TexC;
 };
 
 // Stores the resources needed for the CPU to build the command lists
@@ -48,7 +49,7 @@ struct FrameResource
 {
 public:
     
-    FrameResource(ID3D12Device* device, UINT passCount, UINT objectCount, UINT materialCount);
+    FrameResource(ID3D12Device* device, UINT passCount, UINT objectCount, UINT materialCount, UINT waveVertCount);
     FrameResource(const FrameResource& rhs) = delete;
     FrameResource& operator=(const FrameResource& rhs) = delete;
     ~FrameResource();
@@ -63,6 +64,10 @@ public:
     std::unique_ptr<UploadBuffer<PassConstants>> PassCB = nullptr;
     std::unique_ptr<UploadBuffer<MaterialConstants>> MaterialCB = nullptr;
     std::unique_ptr<UploadBuffer<ObjectConstants>> ObjectCB = nullptr;
+
+    // We cannot update a dynamic vertex buffer until the GPU is done processing
+    // the commands that reference it.  So each frame needs their own.
+    std::unique_ptr<UploadBuffer<Vertex>> WavesVB = nullptr;
 
     // Fence value to mark commands up to this fence point.  This lets us
     // check if these frame resources are still in use by the GPU.
