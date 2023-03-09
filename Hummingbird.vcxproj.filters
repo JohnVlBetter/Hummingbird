@@ -42,8 +42,11 @@
     <ClCompile Include="src\common\Waves.cpp">
       <Filter>src\common</Filter>
     </ClCompile>
-    <ClCompile Include="src\core\TreeBillboardsApp.cpp">
+    <ClCompile Include="src\core\BlurApp.cpp">
       <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\BlurFilter.cpp">
+      <Filter>src\common</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -78,6 +81,9 @@
       <Filter>src\common</Filter>
     </ClInclude>
     <ClInclude Include="src\common\Waves.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\BlurFilter.h">
       <Filter>src\common</Filter>
     </ClInclude>
   </ItemGroup>
