@@ -42,11 +42,11 @@
     <ClCompile Include="src\common\Waves.cpp">
       <Filter>src\common</Filter>
     </ClCompile>
-    <ClCompile Include="src\core\BlurApp.cpp">
-      <Filter>src\core</Filter>
-    </ClCompile>
     <ClCompile Include="src\common\BlurFilter.cpp">
       <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\BasicTessellationApp.cpp">
+      <Filter>src\core</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
