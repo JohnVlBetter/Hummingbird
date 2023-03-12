@@ -45,7 +45,7 @@
     <ClCompile Include="src\common\BlurFilter.cpp">
       <Filter>src\common</Filter>
     </ClCompile>
-    <ClCompile Include="src\core\BasicTessellationApp.cpp">
+    <ClCompile Include="src\core\CameraAndDynamicIndexingApp.cpp">
       <Filter>src\core</Filter>
     </ClCompile>
   </ItemGroup>
