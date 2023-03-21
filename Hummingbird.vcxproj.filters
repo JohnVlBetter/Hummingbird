@@ -45,7 +45,7 @@
     <ClCompile Include="src\common\BlurFilter.cpp">
       <Filter>src\common</Filter>
     </ClCompile>
-    <ClCompile Include="src\core\CubeMapApp.cpp">
+    <ClCompile Include="src\core\NormalMapApp.cpp">
       <Filter>src\core</Filter>
     </ClCompile>
   </ItemGroup>

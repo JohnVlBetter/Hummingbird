@@ -29,7 +29,7 @@
     <ClCompile Include="src\common\GeometryGenerator.cpp" />
     <ClCompile Include="src\common\MathHelper.cpp" />
     <ClCompile Include="src\common\Waves.cpp" />
-    <ClCompile Include="src\core\CubeMapApp.cpp" />
+    <ClCompile Include="src\core\NormalMapApp.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\common\BlurFilter.h" />
