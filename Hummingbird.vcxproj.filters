@@ -45,10 +45,13 @@
     <ClCompile Include="src\common\BlurFilter.cpp">
       <Filter>src\common</Filter>
     </ClCompile>
-    <ClCompile Include="src\core\ShadowMapApp.cpp">
+    <ClCompile Include="src\common\ShadowMap.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\SsaoApp.cpp">
       <Filter>src\core</Filter>
     </ClCompile>
-    <ClCompile Include="src\common\ShadowMap.cpp">
+    <ClCompile Include="src\common\Ssao.cpp">
       <Filter>src\common</Filter>
     </ClCompile>
   </ItemGroup>
@@ -90,6 +93,9 @@
       <Filter>src\common</Filter>
     </ClInclude>
     <ClInclude Include="src\common\ShadowMap.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\Ssao.h">
       <Filter>src\common</Filter>
     </ClInclude>
   </ItemGroup>
